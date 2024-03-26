@@ -1,7 +1,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #005B94;
 }
 
 .container {
@@ -14,17 +13,23 @@ body, html {
     color: white;
 }
 
-.sidebar, .nav {
+.sidebar, .nav, .header {
     text-align: center;
     padding: 15px;
 }
 
 .sidebar{
     background-color: #006157;
+    height: 100vh;
+}
+
+.main {
+    background-color: #007b94;
+    
 }
 
 .header {
-    background-color: #007b94;
+    background-color: #00942c
 }
 
 .nav {
@@ -32,14 +37,12 @@ body, html {
 }
 
 .article {
-    display: flex;
     gap: 10px;
 }
 
 .projects {
     gap: 10px;
 }
-
 .projects p{
     background-color: #7E1DC3;
     font-size: 18px;
