@@ -3,66 +3,20 @@ body, html {
     padding: 0;
 }
 
-.container {
-    display: flex;
-}
-.container div {
-    font-size: 32px;
-    font-family: Helvetica;
-    font-weight: bold;
-    color: white;
-}
-
-.sidebar, .nav, .header {
-    text-align: center;
-    padding: 15px;
-}
-
 .sidebar{
     background-color: #006157;
-    height: 100vh;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
 }
 
-.main {
-    background-color: #007b94;
-    
-}
-
-.header {
-    background-color: #00942c
-}
-
-.nav {
-    background-color: #642cde;
-}
-
-.article {
-    gap: 10px;
-}
-
-.projects {
-    gap: 10px;
-}
-.projects p{
-    background-color: #7E1DC3;
-    font-size: 18px;
-    font-family: sans-serif;
-    color: white;
+.bar-block .bar-item {
+    width: 100%;
+    display: block;
     text-align: left;
+    padding: 8px 16px;
+    outline: 0;
 }
 
-.feed {
-    
-}
-.feed p{
-    background-color: #7E1DC3;
-    font-size: 18px;
-    font-family: sans-serif;
-    color: white;
-    text-align: left;
-    /* gap: 15px; */
-}
-/* .footer {
-  background-color: #393f4d;
-  grid-column: 2 / 3;
-} */
