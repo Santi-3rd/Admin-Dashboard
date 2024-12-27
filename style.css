@@ -1,22 +1,88 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-.sidebar{
-    background-color: #006157;
-    width: 25%;
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    overflow: auto;
+.container {
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav main cards";
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 80px 1fr;
+    min-height: 100vh;
+    gap: 10px;
+    box-sizing: border-box;
 }
 
-.bar-block .bar-item {
-    width: 100%;
-    display: block;
-    text-align: left;
-    padding: 8px 16px;
-    outline: 0;
+.header {
+    grid-area: header;
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
 }
 
+.nav {
+    grid-area: nav;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px); 
+    gap: 20px;
+}
+
+.main-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+}
+
+.cards {
+    grid-area: cards;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.card1, .card2 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "nav"
+            "header"
+            "main"
+            "cards";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .cards {
+        grid-template-rows: auto auto;
+    }
+}
