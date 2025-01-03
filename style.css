@@ -1,22 +1,101 @@
 body, html {
     margin: 0;
     padding: 0;
+    background-color: rgb(219, 219, 219);
+    /* font */
 }
 
-.sidebar{
-    background-color: #006157;
-    width: 25%;
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    overflow: auto;
+.container {
+    display: grid;
+    grid-template-areas: 
+    "sidebar header header"
+    "sidebar main right-cards";
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 80px 1fr;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-.bar-block .bar-item {
-    width: 100%;
-    display: block;
-    text-align: left;
-    padding: 8px 16px;
-    outline: 0;
+.header {
+    grid-area: header;
+    background-color: white;
+    display: grid;
+    padding: 20px;
+    box-shadow: 0px 4px 4px -2px rgb(96, 96, 96);
+    
 }
 
+.sidebar {
+    grid-area: sidebar;
+    display: grid;
+    grid-template-areas:
+    "sidebar-header"
+    "utilites"
+    "settings";
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+}
+
+.sidebar-header {
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(219, 219, 219);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 20px;
+}
+
+.main-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 4px -2px rgb(96, 96, 96);
+}
+
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+}
+
+.right-cards {
+    grid-area: right-cards;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    gap: 10px;
+}
+
+.announcements, .trending{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 4px -2px rgb(96, 96, 96);
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "nav"
+            "header"
+            "main"
+            "right-cards";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .cards {
+        grid-template-rows: auto auto;
+    }
+}
