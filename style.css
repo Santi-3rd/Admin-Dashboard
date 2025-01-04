@@ -2,7 +2,6 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: rgb(219, 219, 219);
-    /* font */
 }
 
 .container {
@@ -26,26 +25,76 @@ body, html {
 }
 
 .sidebar {
-    grid-area: sidebar;
     display: grid;
     grid-template-areas:
-    "sidebar-header"
-    "utilites"
-    "settings";
+    "sidebar-header-icon header"
+    "sidebar-icons utilities"
+    "sidebar-icons settings";
     background-color: #2196F3;
     color: white;
-    text-align: center;
-}
+    padding: 30px;
+    min-height: 100vh;
+    width: 200px;
+  }
 
-.sidebar-header {
-    
-}
+  .sidebar-header {
+    grid-area: sidebar-header;
+    align-items: center;
+    margin-bottom: 40px;
+  }
 
-ul {
-    list-style-type: none;
+  .sidebar-header-icon {
+    grid-area: sidebar-header-icon;
+    width: 40px;
+    height: 40px;
+    fill: white;
+  }
+
+  .sidebar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .utilities,
+  .settings {
+    list-style: none;
     padding: 0;
     margin: 0;
-}
+  }
+
+  .utilities {
+    grid-area: utilities;
+    margin-bottom: 40px;
+  }
+
+  .settings {
+    grid-area: settings;
+  }
+
+  li {
+    padding: 12px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .sidebar-icons {
+    grid-area: sidebar-icons;
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: bold;
+  }
 
 .main {
     grid-area: main;

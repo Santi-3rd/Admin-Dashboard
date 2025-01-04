@@ -1,77 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <input type="text">
-            <img src="" alt="profile image">
-            <h3>User Name</h3>
-            <img src="" alt="profile image">
-            <h3>User Name</h3>
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
-        </header>
-        
-        <nav class="sidebar">
-            <h2 class="sidebar-header">Dashboard</h2>
-            <ul class="utilites">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-            </ul>
-            <ul class="settings">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
-            </ul>
-        </nav>
-        
-        <main class="main">
-          <div class="main-card">
-              <h3>Card 1</h3>
-              <p>Content for card 1</p>
-          </div>
-          <div class="main-card">
-              <h3>Card 2</h3>
-              <p>Content for card 2</p>
-          </div>
-          <div class="main-card">
-              <h3>Card 3</h3>
-              <p>Content for card 3</p>
-          </div>
-          <div class="main-card">
-              <h3>Card 4</h3>
-              <p>Content for card 4</p>
-          </div>
-          <div class="main-card">
-              <h3>Card 5</h3>
-              <p>Content for card 5</p>
-          </div>
-          <div class="main-card">
-              <h3>Card 6</h3>
-              <p>Content for card 6</p>
-          </div>
+      <header class="header">
+        <input type="text" />
+        <img src="" alt="profile image" />
+        <h3>User Name</h3>
+        <img src="" alt="profile image" />
+        <h3>User Name</h3>
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </header>
+
+      <nav class="sidebar">
+        <div class="sidebar-header">
+          <svg class="sidebar-header-icon">
+            <use href="icons/view-dashboard.svg#view-dashboard"></use>
+          </svg>
+          <h2>Dashboard</h2>
+        </div>
+        <ul class="utilities">
+          <li>
+            <svg class="sidebar-icons">
+              <use href="icons/home.svg#home"></use>
+            </svg>
+            <span>Home</span>
+          </li>
+          <li>
+            <svg class="sidebar-icons">
+              <use href="icons/profile.svg#profile"></use>
+            </svg>
+            <span>Profile</span>
+          </li>
+          <li>
+            <svg class="sidebar-icons">
+              <use href="icons/messages.svg#messages"></use>
+            </svg>
+            <span>Messages</span>
+          </li>
+          <li>
+            <svg class="sidebar-icons">
+              <use href="icons/history.svg#history"></use>
+            </svg>
+            <span>History</span>
+          </li>
+          <li>
+            <svg class="sidebar-icons">
+              <use href="icons/tasks.svg#tasks"></use>
+            </svg>
+            <span>Tasks</span>
+          </li>
+          <li>
+            <svg class="sidebar-icons">
+              <use href="icons/communities.svg#communities"></use>
+            </svg>
+            <span>Communities</span>
+          </li>
+        </ul>
+        <ul class="settings">
+          <li>
+            <svg class="sidebar-icons">
+              <use href="icons/settings.svg#settings"></use>
+            </svg>
+            <span>Settings</span>
+          </li>
+          <li>
+            <svg class="sidebar-icons">
+              <use href="icons/support.svg#support"></use>
+            </svg>
+            <span>Support</span>
+          </li>
+          <li>
+            <svg class="sidebar-icons">
+              <use href="icons/privacy.svg#privacy"></use>
+            </svg>
+            <span>Privacy</span>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="main">
+        <div class="main-card">
+          <h3>Card 1</h3>
+          <p>Content for card 1</p>
+        </div>
+        <div class="main-card">
+          <h3>Card 2</h3>
+          <p>Content for card 2</p>
+        </div>
+        <div class="main-card">
+          <h3>Card 3</h3>
+          <p>Content for card 3</p>
+        </div>
+        <div class="main-card">
+          <h3>Card 4</h3>
+          <p>Content for card 4</p>
+        </div>
+        <div class="main-card">
+          <h3>Card 5</h3>
+          <p>Content for card 5</p>
+        </div>
+        <div class="main-card">
+          <h3>Card 6</h3>
+          <p>Content for card 6</p>
+        </div>
       </main>
-        
-        <div class="right-cards">
-          <div class="announcements">
-              <h2>Card 1</h2>
-              <p>Content for card 1</p>
-          </div>
-          <div class="trending">
-              <h2>Card 2</h2>
-              <p>Content for card 2</p>
-          </div>
+
+      <div class="right-cards">
+        <div class="announcements">
+          <h2>Card 1</h2>
+          <p>Content for card 1</p>
+        </div>
+        <div class="trending">
+          <h2>Card 2</h2>
+          <p>Content for card 2</p>
+        </div>
       </div>
     </div>
     <!-- <div class="footer">Footer</div> -->
