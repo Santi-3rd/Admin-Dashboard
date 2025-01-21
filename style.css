@@ -26,21 +26,27 @@ body, html {
 
 .sidebar {
     display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr;
     grid-template-areas:
-    "sidebar-header-icon header"
+    "sidebar-header-icon sidebar-title"
     "sidebar-icons utilities"
     "sidebar-icons settings";
     background-color: #2196F3;
     color: white;
-    padding: 30px;
+    padding: 25px;
     min-height: 100vh;
     width: 200px;
+  }
+
+  .sidebar-title {
+    grid-area: sidebar-title;
+    align-items: center;
   }
 
   .sidebar-header {
     grid-area: sidebar-header;
     align-items: center;
-    margin-bottom: 40px;
   }
 
   .sidebar-header-icon {
