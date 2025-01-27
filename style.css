@@ -26,12 +26,7 @@ body, html {
 
 .sidebar {
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto 1fr;
-    grid-template-areas:
-    "sidebar-header-icon sidebar-title"
-    "sidebar-icons utilities"
-    "sidebar-icons settings";
+    grid-template-rows: auto 1fr;
     background-color: #2196F3;
     color: white;
     padding: 25px;
@@ -40,17 +35,17 @@ body, html {
   }
 
   .sidebar-title {
-    grid-area: sidebar-title;
     align-items: center;
   }
 
   .sidebar-header {
-    grid-area: sidebar-header;
+    display: flex;
     align-items: center;
+    gap: 12px;
+    margin-bottom: 40px
   }
 
   .sidebar-header-icon {
-    grid-area: sidebar-header-icon;
     width: 40px;
     height: 40px;
     fill: white;
@@ -62,6 +57,12 @@ body, html {
     margin: 0;
   }
 
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .utilities,
   .settings {
     list-style: none;
@@ -69,13 +70,21 @@ body, html {
     margin: 0;
   }
 
-  .utilities {
-    grid-area: utilities;
-    margin-bottom: 40px;
+  .utilities li,
+  .settings li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    cursor: pointer;
   }
 
-  .settings {
-    grid-area: settings;
+  .utilities li:hover,
+  .settings li:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 8px 0;
+    margin: 0 -8px;
   }
 
   li {
@@ -91,7 +100,6 @@ body, html {
   }
 
   .sidebar-icons {
-    grid-area: sidebar-icons;
     width: 24px;
     height: 24px;
     fill: white;
@@ -118,12 +126,12 @@ body, html {
     box-shadow: 0px 4px 4px -2px rgb(96, 96, 96);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .main {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
     }
-}
+} */
 
 .right-cards {
     grid-area: right-cards;
@@ -139,7 +147,7 @@ body, html {
     box-shadow: 0px 4px 4px -2px rgb(96, 96, 96);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .container {
         grid-template-areas: 
             "nav"
@@ -153,4 +161,4 @@ body, html {
     .cards {
         grid-template-rows: auto auto;
     }
-}
+} */
