@@ -9,14 +9,27 @@
   <body>
     <div class="container">
       <header class="header">
-        <input type="text" />
-        <img src="" alt="profile image" />
-        <h3>User Name</h3>
-        <img src="" alt="profile image" />
-        <h3>User Name</h3>
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
+        <div class="header-top">
+          <div class="search-container">
+            <svg class="search-icon"></svg>
+            <input type="text" />
+          </div>
+
+          <div class="notification-container">
+            <svg class="notification-icon"></svg>
+          </div>
+
+          <div class="user-info">
+            <img src="" alt="profile image" />
+            <h3>User Name</h3>
+          </div>
+
+          <img src="" alt="profile image" />
+          <h3>User Name</h3>
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
       </header>
 
       <nav class="sidebar">
@@ -26,64 +39,67 @@
           </svg>
           <h2 class="sidebar-title">Dashboard</h2>
         </div>
-        <ul class="utilities">
-          <li>
-            <svg class="sidebar-icons">
-              <use href="icons/home.svg#home"></use>
-            </svg>
-            <span>Home</span>
-          </li>
-          <li>
-            <svg class="sidebar-icons">
-              <use href="icons/profile.svg#profile"></use>
-            </svg>
-            <span>Profile</span>
-          </li>
-          <li>
-            <svg class="sidebar-icons">
-              <use href="icons/messages.svg#messages"></use>
-            </svg>
-            <span>Messages</span>
-          </li>
-          <li>
-            <svg class="sidebar-icons">
-              <use href="icons/history.svg#history"></use>
-            </svg>
-            <span>History</span>
-          </li>
-          <li>
-            <svg class="sidebar-icons">
-              <use href="icons/tasks.svg#tasks"></use>
-            </svg>
-            <span>Tasks</span>
-          </li>
-          <li>
-            <svg class="sidebar-icons">
-              <use href="icons/communities.svg#communities"></use>
-            </svg>
-            <span>Communities</span>
-          </li>
-        </ul>
-        <ul class="settings">
-          <li>
-            <svg class="sidebar-icons">
-              <use href="icons/settings.svg#settings"></use>
-            </svg>
-            <span>Settings</span>
-          </li>
-          <li>
-            <svg class="sidebar-icons">
-              <use href="icons/support.svg#support"></use>
-            </svg>
-            <span>Support</span>
-          </li>
-          <li>
-            <svg class="sidebar-icons">
-              <use href="icons/privacy.svg#privacy"></use>
-            </svg>
-            <span>Privacy</span>
-          </li>
-        </ul>
+
+        <div class="menu-container">
+          <ul class="utilities">
+            <li>
+              <svg class="sidebar-icons">
+                <use href="icons/home.svg#home"></use>
+              </svg>
+              <span>Home</span>
+            </li>
+            <li>
+              <svg class="sidebar-icons">
+                <use href="icons/profile.svg#profile"></use>
+              </svg>
+              <span>Profile</span>
+            </li>
+            <li>
+              <svg class="sidebar-icons">
+                <use href="icons/messages.svg#messages"></use>
+              </svg>
+              <span>Messages</span>
+            </li>
+            <li>
+              <svg class="sidebar-icons">
+                <use href="icons/history.svg#history"></use>
+              </svg>
+              <span>History</span>
+            </li>
+            <li>
+              <svg class="sidebar-icons">
+                <use href="icons/tasks.svg#tasks"></use>
+              </svg>
+              <span>Tasks</span>
+            </li>
+            <li>
+              <svg class="sidebar-icons">
+                <use href="icons/communities.svg#communities"></use>
+              </svg>
+              <span>Communities</span>
+            </li>
+          </ul>
+          <ul class="settings">
+            <li>
+              <svg class="sidebar-icons">
+                <use href="icons/settings.svg#settings"></use>
+              </svg>
+              <span>Settings</span>
+            </li>
+            <li>
+              <svg class="sidebar-icons">
+                <use href="icons/support.svg#support"></use>
+              </svg>
+              <span>Support</span>
+            </li>
+            <li>
+              <svg class="sidebar-icons">
+                <use href="icons/privacy.svg#privacy"></use>
+              </svg>
+              <span>Privacy</span>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <main class="main">
